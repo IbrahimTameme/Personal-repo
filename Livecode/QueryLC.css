@@ -1,0 +1,139 @@
+body
+{
+    background-color: pink;
+}
+img{
+    width: 400px;
+    height: 400px;
+    margin: 0;   
+}
+.d1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.span1
+{
+    font-size: 100px;
+    position: absolute;
+    left: 5%;
+    color: yellow;
+}
+.span2
+{
+    font-size: 100px;
+    position: absolute;
+    left: 30%;
+    color: blueviolet;
+}
+.span3
+{
+    font-size: 100px;
+    position: absolute;
+    left: 50%;
+    color: chocolate;
+}
+.span4
+{
+    font-size: 100px;
+    position: absolute;
+    left: 70%;
+   color: darkgreen;
+}
+
+
+
+@media (min-width: 768px) and (max-width:1024px)
+{
+    body 
+    {
+        background-color: tomato;
+    }
+    img
+{
+    width: 200px;
+    height: 100px;
+}
+.d1{
+
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+.span1
+{
+    color: rgb(66, 0, 6);
+    left: 0%;
+    top: 5%;
+    font-size: 70px;
+
+}
+.span2
+{
+    display: none;
+    
+}
+.span3
+{
+    color: rgb(32, 202, 75);
+    left: 0%;
+    top: 15%;
+    font-size: 70px;
+    
+}
+.span4
+{
+  display: none;
+    
+}
+}
+
+@media (min-width: 425px) and (max-width:768px)
+{
+    body 
+    {
+        background-color: bisque;
+    }
+.d1
+{
+    
+    align-items: center;
+    flex-direction: column-reverse;
+    
+
+}
+img 
+{ 
+    width: 100px;
+    height: 100px;
+
+}
+.span2
+{
+    color: rgb(255, 25, 198);
+    left: 0%;
+    top: 5%;
+    font-size: 70px;
+
+}
+.span1
+{
+    display: none;
+    
+}
+.span4
+{
+    color: rgb(6, 130, 179);
+    left: 0%;
+    top: 15%;
+    font-size: 70px;
+    
+}
+.span3
+{
+  display: none;
+    
+}
+}
