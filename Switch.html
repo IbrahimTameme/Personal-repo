@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="my()">Myname</button>
+    <ul>
+        <li>Ibrahim , 0</li>
+        <li> Dyar , 1</li>
+        <li> Taebah , 2</li>
+    </ul>
+    <h1 style="text-align: center; font-size: xx-large; color: blue;" id="name"></h1>
+    
+</body>
+<script>
+    "use strict";
+    function my(){
+    let myname = prompt("Enter your Number" , "0" ); ;
+
+    let name ;
+    let num1 = parseInt(myname);
+ 
+
+    switch (num1)
+    {
+        case 0:
+            name = "Ibrahim";
+            
+            break;
+        case 1:
+            name = "Dyar"   ;  
+            break;   
+        case 2:
+            name = "Taebah"   ;  
+            break; 
+            default:
+                name = "Number is not in the data base";
+                break;
+           
+    }
+
+    document.getElementById("name").innerHTML = name;
+}
+</script>
+</html>
