@@ -7,6 +7,7 @@ let choices = document.getElementsByClassName("qchoices");
 let resultbutton = document.getElementById("resultsbutton")
 let timercounter = document.getElementById("timercounter");
 let timer = document.getElementById("timer")
+let qimg = document.getElementById("qimg")
 let index = 0;
 let dropdownboxchoice ;
 let choosedtopicarr = [];
@@ -174,16 +175,19 @@ function setquestions()
     {
         choosedtopicarr = htmlquestion;
         topiccorrectanswers = htmlanswersarr;
+        qimg.src = "../img/html-1.jpg";
     }
     else if (topic == 'CSS')
     {
         choosedtopicarr = Cssquestion;
         topiccorrectanswers = cssanswersarr;
+        qimg.src = "../img/JS.png";
     }
     else if (topic == 'JS')
     {
         choosedtopicarr = JSquestion;
         topiccorrectanswers = jsanswersarr;
+        qimg.src = "../img/learn-css.png";
         console.log(topiccorrectanswers);
         console.log(choosedtopicarr);
     }
